@@ -36,7 +36,7 @@ shadingBtn.addEventListener("click", () => {
   }
 });
 
-function sketch(size = 16) {
+function sketch(size = 32) {
   for (let i = 0; i < size; i++) {
     const row = document.createElement("div");
     row.classList.add("row");
@@ -122,7 +122,7 @@ function sketch(size = 16) {
         }
       });
       resetBtn.addEventListener("click", () => {
-        newSquare.style.background = "white";
+        newSquare.style.background = "";
         rgbMode = false;
         shadingMode = false;
         rgbBtn.classList.remove("toggle");
